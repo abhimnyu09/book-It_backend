@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2020",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Module Options */
+    "module": "commonjs",
+    "moduleResolution": "node", // This is the most important line!
+    "rootDir": "./src",
+    
+    /* Output Options */
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"], // Only compile files in the src folder
+  "exclude": ["node_modules"]
+}
