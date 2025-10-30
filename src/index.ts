@@ -3,7 +3,7 @@ import cors from 'cors';
 import { connectDB, db } from './db'; // 1. Import 'db'
 
 const app: Express = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
